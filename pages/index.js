@@ -1,6 +1,7 @@
+import { Center } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { Footer } from "@/components";
+import { Footer, FormAdd, Header } from "@/components";
 
 export default function Home() {
   return (
@@ -11,7 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>Hello, World!</main>
+      <Center height="600px">
+        <main>
+          <Header />
+          <FormAdd onSubmit={(data) => console.log(data)} />
+        </main>
+      </Center>
 
       <Footer />
     </div>
