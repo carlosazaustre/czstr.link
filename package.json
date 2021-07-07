@@ -11,5 +11,25 @@
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
-  }
+  },
+  "description": "> A self-made URL Shortener",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosazaustre/czstr.link.git"
+  },
+  "keywords": [
+    "url-shortener",
+    "next",
+    "react",
+    "prisma",
+    "vercel"
+  ],
+  "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosazaustre/czstr.link/issues"
+  },
+  "homepage": "https://github.com/carlosazaustre/czstr.link#readme"
 }
