@@ -15,7 +15,7 @@ export default function Home() {
       <Center height="600px">
         <main>
           <Header />
-          <FormAdd onSubmit={(data) => console.log(data)} />
+          <FormAdd />
         </main>
       </Center>
 
