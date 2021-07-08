@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.5.0",
     "@hookform/resolvers": "^2.6.0",
+    "@prisma/client": "^2.26.0",
     "framer-motion": "^4.1.17",
     "next": "11.0.1",
     "react": "17.0.2",

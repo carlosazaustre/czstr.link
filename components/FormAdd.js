@@ -28,11 +28,14 @@ export function FormAdd() {
     const response = await fetch("/api/shortUrl", {
       method: "POST",
       body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
-    reset(response);
 
-    const { shortUrl } = await response.json();
-    setLink(shortUrl);
+    const res = await response.json();
+    reset(response);
+    setLink(`https://czstr.link/${res.data.shortUrl}`);
 
     toast({
       title: "Short URL copied to clipboard",
