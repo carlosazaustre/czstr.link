@@ -48,7 +48,12 @@ export function FormAdd({ onSubmit }) {
           </Button>
 
           <InputGroup size="lg">
-            <Input type="text" value="" color="purple" borderColor="purple" />
+            <Input
+              type="text"
+              value=""
+              color="purple"
+              borderColor="purple.200"
+            />
             <InputRightElement>
               <Button colorScheme="purple" size="md" onClick={onCopy} mr={1}>
                 {hasCopied ? <CheckIcon /> : <CopyIcon />}

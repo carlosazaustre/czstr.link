@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <Container>
       <Flex alignItems="center" justifyContent="center">
-        <Text>
+        <Text color="gray.500">
           Made with{" "}
           <span role="img" aria-label="love">
             ❤️
