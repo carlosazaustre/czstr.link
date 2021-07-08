@@ -1,4 +1,4 @@
-import db from "@lib/client";
+import db from "@/lib/client";
 
 export default async function handler(req, res) {
   const { url } = req.body;
