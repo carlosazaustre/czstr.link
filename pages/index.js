@@ -5,9 +5,8 @@ import Head from "next/head";
 import { Footer, FormAdd, Header, Nav } from "@/components";
 
 export default function Home() {
-  const { user, error, isLoading } = useUser();
+  const { user, error } = useUser();
 
-  if (isLoading) return <div>Loading</div>;
   if (error) return <div>Error: {error}</div>;
 
   return (
