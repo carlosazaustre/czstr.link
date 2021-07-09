@@ -9,6 +9,7 @@ export default async function handler(req, res) {
 
   try {
     const userDB = await getUserByEmail(user.email);
+    console.log("user data", userDB);
     const data = await createShortLink(url, shortUrl, userDB.id);
 
     return res.status(200).json({ data });
