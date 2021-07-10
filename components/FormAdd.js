@@ -21,8 +21,8 @@ export function FormAdd() {
   } = useForm();
 
   const toast = useToast();
-  const { hasCopied, onCopy } = useClipboard("TODO");
   const [link, setLink] = useState("");
+  const { hasCopied, onCopy } = useClipboard(link);
 
   const onSubmit = async (data) => {
     const response = await fetch("/api/shortUrl", {

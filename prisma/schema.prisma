@@ -10,10 +10,19 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  links     Link[]
+  createdAt DateTime @default(now())
+}
+
 model Link {
-  id          Int       @id @default(autoincrement())
-  url         String    @unique
-  createdAt   DateTime  @default(now())
-  shortUrl    String    @unique
-  clicks      Int       @default(0)
+  id        Int      @id @default(autoincrement())
+  url       String   @unique
+  createdAt DateTime @default(now())
+  shortUrl  String   @unique
+  clicks    Int      @default(0)
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
 }

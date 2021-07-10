@@ -3,25 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "prisma generate",
+    "postinstall": "npm run db:generate",
+    "db:generate": "prisma generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext js,jsx ."
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^1.4.2",
     "@chakra-ui/icons": "^1.0.13",
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.5.0",
-    "@hookform/resolvers": "^2.6.0",
     "@prisma/client": "^2.26.0",
+    "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "yup": "^0.32.9"
+    "react-hook-form": "^7.10.1"
   },
   "description": "> A self-made URL Shortener",
   "main": "index.js",
@@ -36,8 +38,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.1",
     "prettier": "^2.3.2",
-    "prisma": "^2.26.0",
-    "react-hook-form": "^7.10.1"
+    "prisma": "^2.26.0"
   },
   "repository": {
     "type": "git",
@@ -48,7 +49,8 @@
     "next",
     "react",
     "prisma",
-    "vercel"
+    "vercel",
+    "auth0"
   ],
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es/)",
   "license": "MIT",

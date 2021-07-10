@@ -1,4 +1,4 @@
-import db from "@/lib/client";
+import { getURLbyShortLink, updateShortLinkClicks } from "@/lib/db";
 
 export default function ShortIdPage() {
   return <div>ShortID Redirect</div>;
@@ -6,19 +6,19 @@ export default function ShortIdPage() {
 
 export async function getServerSideProps({ params }) {
   const { shortId } = params;
-
-  const data = await db.link.findUnique({
-    where: { shortUrl: shortId },
-  });
+  const data = await getURLbyShortLink(shortId);
 
   if (!data) {
-    return { redirect: { destination: "/" } };
+    return {
+      redirect: { destination: "/" },
+    };
   }
 
-  await db.link.update({
-    where: { shortUrl: shortId },
-    data: { clicks: data.clicks + 1 },
-  });
+  await updateShortLinkClicks(shortId, data);
 
-  return { redirect: { destination: data?.url || "/" } };
+  return {
+    redirect: {
+      destination: data.url,
+    },
+  };
 }
