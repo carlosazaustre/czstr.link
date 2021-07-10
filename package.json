@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "prisma generate",
+    "postinstall": "npm run db:generate && npm run db:migrate",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
