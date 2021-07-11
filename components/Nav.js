@@ -1,4 +1,5 @@
 import { useUser } from "@auth0/nextjs-auth0";
+import { AddIcon } from "@chakra-ui/icons";
 import { Flex, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
 
 export function Nav() {
@@ -17,6 +18,23 @@ export function Nav() {
       justify="flex-end"
       align="center">
       <Text mr={4}>Hi, {user.email}!</Text>
+
+      <LinkBox
+        borderWidth="1px"
+        borderColor="purple.500"
+        px={4}
+        py={2}
+        mr={4}
+        lineHeight={6}
+        rounded="lg"
+        maxW="md"
+        _hover={{ bg: "purple.500", color: "white" }}>
+        <AddIcon />
+        <LinkOverlay ml={2} href="/">
+          Create Link
+        </LinkOverlay>
+      </LinkBox>
+
       <LinkBox
         borderWidth="1px"
         borderColor="purple.500"
@@ -28,6 +46,7 @@ export function Nav() {
         _hover={{ bg: "purple.500", color: "white" }}>
         <LinkOverlay href="/dashboard">My Links</LinkOverlay>
       </LinkBox>
+
       <LinkBox
         borderWidth="1px"
         borderColor="purple.500"
