@@ -56,10 +56,7 @@ export default function Dashboard({ links }) {
                   </Td>
                   <Td>
                     <LinkIcon color="purple.500" />
-                    <Link
-                      ml={2}
-                      color="purple.500"
-                      href={`//czstr.link/${link.shortUrl}`}>
+                    <Link ml={2} color="purple.500" href={`/${link.shortUrl}`}>
                       czstr.link/<strong>{link.shortUrl}</strong>
                     </Link>
                   </Td>
