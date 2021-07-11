@@ -10,10 +10,10 @@ export function Footer() {
         justify="center"
         textAlign="center">
         <Text fontSize="sm" color="gray.500">
-          Powered by{" "}
+          Made by{" "}
           <span role="img" aria-label="love">
             ❤️
-          </span>{" "}
+          </span>
           &amp;{" "}
           <span role="img" aria-label="code">
             💻
@@ -21,7 +21,7 @@ export function Footer() {
           by <Link href="//carlosazaustre.es">Carlos Azaustre</Link>
         </Text>
         <Text fontSize="xs" color="gray.500">
-          Hosted on <Link href="//vercel.com">Vercel</Link> &{" "}
+          Powered by <Link href="//vercel.com">Vercel</Link> &{" "}
           <Link href="/zipuc3s">Digital Ocean</Link>
         </Text>
       </Flex>
