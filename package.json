@@ -13,7 +13,7 @@
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.4.2",
     "@chakra-ui/icons": "^1.0.13",
-    "@chakra-ui/react": "^1.6.4",
+    "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.5.0",
