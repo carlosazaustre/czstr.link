@@ -17,7 +17,7 @@
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.5.0",
-    "@prisma/client": "^2.26.0",
+    "@prisma/client": "^2.27.0",
     "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
     "next": "11.0.1",
