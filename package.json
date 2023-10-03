@@ -20,7 +20,7 @@
     "@prisma/client": "^2.26.0",
     "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
-    "next": "11.0.1",
+    "next": "13.5.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.10.1"
