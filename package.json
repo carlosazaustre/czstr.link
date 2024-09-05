@@ -11,7 +11,7 @@
     "lint": "eslint --ext js,jsx ."
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "^1.4.2",
+    "@auth0/nextjs-auth0": "^2.0.0",
     "@chakra-ui/icons": "^1.0.13",
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11.4.0",
@@ -20,7 +20,7 @@
     "@prisma/client": "^2.26.0",
     "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
-    "next": "11.0.1",
+    "next": "12.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.10.1"
